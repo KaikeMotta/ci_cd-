@@ -33,6 +33,9 @@ jobs:
   build:
     needs: test
     runs-on: ${{matrix.os}}
+    strategy:
+      matrix:
+        os: ["ubuntu-latest", "ubuntu-18.4", ">=1.18"]
     steps:
       - uses: actions/checkout@v3
       - name: Build
