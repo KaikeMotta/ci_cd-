@@ -2,9 +2,9 @@ name: Go
 
 on:
   push:
-    branches: [matrix]
+    branches: ["*"]
   pull_request:
-    branches: [matrix]
+    branches: ["*"]
 
 jobs:
   test:
