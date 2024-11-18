@@ -42,4 +42,6 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: kaikemotta/go_ci:${{github.ref_name}}
+          
          
+          
